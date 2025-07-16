@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+.parent{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10 12vw;
+}
+
+.child-1 img{
+    width: 150px;
+}
+.child-1{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a  button{
+    background-color: rgb(98, 157, 176);
+}
+
+.child-1 div  {
+    display: flex;
+    gap: 30px;
+
+}
+
+
+.header-right {
+    padding: 10px;
+    font-size: large;
+    gap: 10px;
+}
+
+
+.header-right button{
+    padding: 14px 20px;
+    background-color: rgb(17, 153, 199);
+    color: white ;
+    border-radius: 4px;
+
+}
+
+.parent-1{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}

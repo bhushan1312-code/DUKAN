@@ -63,7 +63,7 @@ a  button{
     overflow: hidden;
 }
 
-.hero  {
+.hero h1  {
 
      font-size: x-large;
 }
@@ -81,4 +81,8 @@ a  button{
 
 .hero-1{
     overflow: hidden;
+}
+
+.hero img {
+   text-align: center;
 }

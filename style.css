@@ -55,8 +55,30 @@ a  button{
 }
 
 .parent-1{
-    padding: 15px;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero  {
+
+     font-size: x-large;
+}
+
+.hero button{
+    justify-content: flex-start;
+    color: white;
+    background-color:  rgb(14, 131, 170);
+    border: 5px;
+    width: 100px;
+    height: 40px;
+
+}
+
+
+.hero-1{
+    overflow: hidden;
 }

@@ -55,34 +55,126 @@ a  button{
 }
 
 .parent-1{
-    padding: 25px;
+    padding-left: 12vw;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     height: 100vh;
     overflow: hidden;
+}
+.hero{
+    padding: 20px;
+}
+
+.para1{
+    padding-bottom: 30px;
 }
 
 .hero h1  {
 
-     font-size: x-large;
+     font-size: xx-large;
 }
 
+  
 .hero button{
-    justify-content: flex-start;
-    color: white;
-    background-color:  rgb(14, 131, 170);
-    border: 5px;
-    width: 100px;
-    height: 40px;
+     padding-top:10px;
+    background-color: rgb(17, 153, 199);
+    color: white ;
+    border-radius: 4px;
 
 }
-
 
 .hero-1{
     overflow: hidden;
+    width: 46vw;
 }
 
-.hero img {
-   text-align: center;
+.para {
+ display: flex;
+ align-items: center;
+}
+
+
+
+.marquee-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #1a181e;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  width: fit-content;
+}
+
+.marquee-left {
+  animation: marquee-left 20s linear infinite;
+}
+
+.scroll-card {
+  /* background: #fff; */
+  margin-right: 30px;
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-card img {
+  width: 80%;
+  border-radius: 8px;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Pause on hover */
+.marquee-container:hover .marquee-left,
+.marquee-container:hover .marquee-right {
+  animation-play-state: paused;
+}
+
+.text{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* marquee end */
+
+
+.img-1{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.img-11{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
 }
